@@ -55,9 +55,3 @@ emoticon_set.map do |this_mood, the_mood_hashes|
     mood_hash_array = the_mood_hashes
   end
 end
-if main_emoji_array.member? emoticon
-   emoticon_set.key(mood_hash_array)
- else
-    sorry_message
-  end
-end
