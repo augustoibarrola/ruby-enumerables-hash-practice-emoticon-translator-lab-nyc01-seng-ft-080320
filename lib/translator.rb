@@ -48,5 +48,5 @@ def get_english_meaning(yaml_file, emoticon)
       main_emoji_array << emoji
     end
   end
-pry
+binding.pry
 end
