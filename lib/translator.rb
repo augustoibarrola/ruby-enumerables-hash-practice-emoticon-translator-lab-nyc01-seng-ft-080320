@@ -43,9 +43,11 @@ end
 def get_english_meaning(yaml_file, emoticon)
   emoticon_set = load_library("./lib/emoticons.yml")
   emoticons_array = Array.new
+  what_is_this_feeling = Array.new
   emoticons_hash = Hash.new
   emoticon_set.each do |moods, mood_hashes|
-    emoticons_array << mood_hashes.values
+    emoticons_array << mood_hashes.values.flatten
+    what_is_this_feeling << moods
     binding.pry
   end
   binding.pry
