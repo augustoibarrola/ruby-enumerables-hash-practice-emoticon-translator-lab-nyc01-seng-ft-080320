@@ -52,7 +52,7 @@ def get_english_meaning(yaml_file, emoticon)
   together_now = what_is_this_feeling.zip(emoticons_array)
   key = Array.new
   together_now.each do |x|
-    if x.include? emoticon
+    if x.flatten.include? emoticon
       key << x
     end
     binding.pry
