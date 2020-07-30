@@ -50,8 +50,14 @@ def get_english_meaning(yaml_file, emoticon)
     what_is_this_feeling << moods
   end
   together_now = what_is_this_feeling.zip(emoticons_array)
+  key = ""
+  together_now.each do |x|
+    if x.includes? emoticon
+      key = x
+    end
+  end
   if together_now.flatten.include? emoticon ?
-    emoticon_set.key()
+    emoticon_set.key(key)
   else
     sorry_message
   end
