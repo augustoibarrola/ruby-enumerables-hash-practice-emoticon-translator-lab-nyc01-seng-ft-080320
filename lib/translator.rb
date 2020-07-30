@@ -45,9 +45,14 @@ def get_english_meaning(yaml_file, emoticon)
   emoticon_set.each do |mood, mood_hashes|
     mood_hashes.each do |language, emoji|
       if emoji == emoticon
-         emoticon_set.key(mood_hashes)
+         empty = mood_hashes
       end
 end
 end
-binding.pry
+face_list = Array.new
+emoticon_set.each do |mood, hash|
+  hash.each_value do |faces|
+    face_list << faces
+  end
 end
+face_list.member? emoticon ?
