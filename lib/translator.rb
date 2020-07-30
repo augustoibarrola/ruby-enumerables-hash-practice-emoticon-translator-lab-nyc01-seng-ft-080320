@@ -65,12 +65,3 @@ end
 
 
 
-
-  binding.pry
-  emoticons_hash = Hash[emoticons_array]
-  if emoticons_hash.member? emoticon
-   emoticons_hash.invert.key(emoticon)
-   else
-     sorry_message
-   end
-  end
