@@ -50,16 +50,9 @@ def get_english_meaning(yaml_file, emoticon)
       end
 end
 end
+end
 
 
 
 
 
-
-# face_list = Array.new
-# emoticon_set.each do |mood, hash|
-#  hash.each_value do |faces|
-#    face_list << faces
-#  end
-# end
-# face_list.member? emoticon ? empty.key(mood_hashes) : sorry_message
