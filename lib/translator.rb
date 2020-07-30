@@ -48,9 +48,9 @@ def get_english_meaning(yaml_file, emoticon)
       main_emoji_array << emoji
     end
   end
+  mood_hash_array = Array.new
 emoticon_set.map do |this_mood, the_mood_hashes|
   if the_mood_hashes.member? emoticon
-    mood_hash_array = Array.new
     mood_hash_array << the_mood_hashes
     binding.pry
   end
