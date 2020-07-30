@@ -53,12 +53,10 @@ def get_english_meaning(yaml_file, emoticon)
 emoticon_set.map do |this_mood, the_mood_hashes|
   the_mood_hashes.member? emoticon
     mood_hash_array = the_mood_hashes
-    binding.pry
   end
 end
 if main_emoji_array.member? emoticon
    emoticon_set.key(mood_hash_array)
-   binding.pry
  else
     sorry_message
   end
