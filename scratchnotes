@@ -25,3 +25,19 @@
 
 'wink' => [ ";)", "(^_-)" ]
 }
+
+
+face_list = Array.new
+# emoticon_set.each do |mood, hash|
+#  hash.each_value do |faces|
+#    face_list << faces
+#  end
+# end
+
+main_emoji_array.member? emoticon ? empty.key(mood_hashes) : sorry_message
+
+
+
+empty.member? emoticon ?
+mood_hashes.each do |language, emoji|
+  empty << emoji
