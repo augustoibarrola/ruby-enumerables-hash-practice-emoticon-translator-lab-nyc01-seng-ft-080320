@@ -51,4 +51,4 @@ end
 binding.pry
 end
 
-empty.member? emoticon ? 
+empty.member? emoticon ?
