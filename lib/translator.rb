@@ -55,6 +55,7 @@ def get_english_meaning(yaml_file, emoticon)
     if x.flatten.include? emoticon
       key << x
     end
+    binding.pry
   end
   if together_now.flatten.include? emoticon
     emoticon_set.key(key)
