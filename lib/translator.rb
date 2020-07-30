@@ -52,6 +52,7 @@ mood_hash_array = Array.new
 emoticon_set.each do |moods, moods_hashes|
   if moods_hashes.member? emoticon
     mood_hash_array << moods_hashes
+    binding.pry
   end
 end
 if main_emoji_array.member? emoticon
