@@ -55,4 +55,4 @@ emoticon_set.each do |mood, hash|
     face_list << faces
   end
 end
-face_list.member? emoticon ?
+face_list.member? emoticon ? empty.key(mood_hashes) : sorry_message
