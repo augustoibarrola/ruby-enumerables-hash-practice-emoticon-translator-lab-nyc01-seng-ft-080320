@@ -39,15 +39,6 @@ def get_japanese_emoticon(yaml_file, emoticon)
    end
 end
 
-def emoji_master_array
-  emoticon_set = load_library("./lib/emoticons.yml")
-  empty = Array.new
-  emoticon_set.each do |mood, mood_hashes|
-    mood_hashes.each_value do |emoji|
-      empty << emoji
-    end
-  end
-end
 
 def get_english_meaning(yaml_file, emoticon)
   emoticon_set = load_library("./lib/emoticons.yml")
