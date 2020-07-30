@@ -56,11 +56,11 @@ end
 
 
 
-#face_list = Array.new
-#emoticon_set.each do |mood, hash|
+# face_list = Array.new
+# emoticon_set.each do |mood, hash|
 #  hash.each_value do |faces|
 #    face_list << faces
 #  end
-#end
-#face_list.member? emoticon ? empty.key(mood_hashes) : sorry_message
-#end
+# end
+# face_list.member? emoticon ? empty.key(mood_hashes) : sorry_message
+# end
