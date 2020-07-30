@@ -31,7 +31,6 @@ def get_japanese_emoticon(yaml_file, emoticon)
   emoticon_set.each do |moods, mood_hashes|
     emoticons_array << mood_hashes.values
   end
-  binding.pry
   emoticons_hash = Hash[emoticons_array]
   if emoticons_hash.member? emoticon
    emoticons_hash.invert.key(emoticon)
@@ -47,6 +46,8 @@ def get_english_meaning(yaml_file, emoticon)
   emoticons_hash = Hash.new
   emoticon_set.each do |moods, mood_hashes|
     emoticons_array << mood_hashes.values
+    binding.pry
+
   end
   binding.pry
   emoticons_hash = Hash[emoticons_array]
