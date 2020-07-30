@@ -61,4 +61,5 @@ def get_english_meaning(yaml_file, emoticon)
   else
     sorry_message
   end
+  binding.pry
 end
