@@ -48,7 +48,6 @@ def get_english_meaning(yaml_file, emoticon)
       empty << emoji
 end
 end
-binding.pry
 end
 
 empty.member? emoticon ?
