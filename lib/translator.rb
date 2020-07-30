@@ -47,4 +47,3 @@ def get_english_meaning(yaml_file, emoticon)
     binding.pry
 end
 end
-end
