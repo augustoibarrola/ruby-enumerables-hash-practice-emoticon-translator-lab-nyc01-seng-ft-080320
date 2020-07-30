@@ -43,15 +43,16 @@ end
 
 def get_english_meaning(yaml_file, emoticon)
   emoticon_set = load_library("./lib/emoticons.yml")
-  main_emoji_array = Array.new
-  emoticon_set.each do |mood, mood_hashes|
-    mood_hashes.each_value do |emoji|
-      main_emoji_array << emoji
-    end
+  emoticons_array = Array.new
+  emoticons_hash = Hash.new
+  emoticon_set.each do |moods, mood_hashes|
+    emoticons_array << mood_hashes.values
   end
-  mood_hash_array = Array.new
-emoticon_set.map do |this_mood, the_mood_hashes|
-  the_mood_hashes.member? emoticon
-    mood_hash_array = the_mood_hashes
+  binding.pry
+  emoticons_hash = Hash[emoticons_array]
+  if emoticons_hash.member? emoticon
+   emoticons_hash.invert.key(emoticon)
+   else
+     sorry_message
+   end
   end
-end
