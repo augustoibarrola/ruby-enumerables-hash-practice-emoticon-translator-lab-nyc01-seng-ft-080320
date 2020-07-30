@@ -48,5 +48,11 @@ def get_english_meaning(yaml_file, emoticon)
       main_emoji_array << emoji
     end
   end
-binding.pry
+mood_hash_array = Array.new
+emoticon_set.each do |moods, moods_hashes|
+  if moods_hashes.member? emoticon
+    mood_hash_array << moods_hashes
+  end
+end
+main_emoji_array.member? emoticon ? emoticon_set.key(mood_hash_array) : sorry_message
 end
