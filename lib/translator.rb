@@ -62,3 +62,4 @@ def get_english_meaning(yaml_file, emoticon)
     sorry_message
   end
 end
+end
