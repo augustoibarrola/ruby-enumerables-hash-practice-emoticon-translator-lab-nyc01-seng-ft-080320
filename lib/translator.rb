@@ -56,6 +56,7 @@ emoticon_set.each do |moods, moods_hashes|
 end
 if main_emoji_array.member? emoticon
    emoticon_set.key(mood_hash_array)
+   binding.pry
  else
     sorry_message
   end
