@@ -44,9 +44,6 @@ def get_english_meaning(yaml_file, emoticon)
   empty = Array.new
   emoticon_set.each do |mood, mood_hashes|
     mood_hashes.each do |language, emoji|
-      if emoji == emoticon
-         empty = mood_hashes
-      end
       binding.pry
 
 end
