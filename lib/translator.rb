@@ -48,5 +48,5 @@ def get_english_meaning(yaml_file, emoticon)
       main_emoji_array << emoji
     end
   end
-emoticon_set.each do |mood, 
+emoticon_set.each do |mood,
 end
