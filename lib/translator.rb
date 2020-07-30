@@ -45,8 +45,6 @@ def get_english_meaning(yaml_file, emoticon)
   emoticon_set.each do |mood, mood_hashes|
     empty << mood_hashes
     binding.pry
-    mood_hashes.each do |language, emoji|
-      empty << emoji
 end
 end
 end
